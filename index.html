@@ -12,32 +12,32 @@
   /* --- HEADER PRESISI --- */
   .header { position: relative; height: 120px; margin-bottom: 20px; }
   
-  /* Kotak Putih */
+  /* Kotak Putih (Digeser agak ke kiri) */
   .logo-box { 
     width: 75px; height: 75px; background: #fff; border-radius: 12px; 
-    position: absolute; top: 10px; left: 22%; 
+    position: absolute; top: 10px; left: 20%; 
     display: flex; justify-content: center; align-items: flex-end; 
     z-index: 5; padding-bottom: 2px;
   }
   
-  /* Gambar Burung (Dibikin lebih gede dikit biar keluar dari kotak) */
+  /* Gambar Burung (Dikecilin, ditarik pas ke bawah) */
   .logo-box img { 
-    width: 115%; /* Dibikin lebih gede */
+    width: 100%; /* Ukuran normal */
     height: auto; 
     object-fit: contain; 
-    margin-bottom: -18px; /* Ditarik agak turun biar nginjek teks */
+    margin-bottom: -12px; /* Cuma ujung sepatu yang turun */
   }
 
-  /* Teks PORPROV KALTIM (Digeser agak ke kanan biar gak ketutupan) */
+  /* Teks PORPROV KALTIM (Digeser ke kanan biar gak ketutupan) */
   .header-text { 
     position: absolute; top: 30px; left: 45%; 
     text-align: left; z-index: 1;
   }
   .header-text h1 { font-size: 18px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: #fff; }
 
-  /* Teks Kembali (Digeser ke kiri biar pas diinjek kaki burung) */
+  /* Teks Kembali (Digeser biar sepatu nginjek huruf "Kem") */
   .back-link {
-    position: absolute; top: 90px; left: 23%; 
+    position: absolute; top: 93px; left: 20%; 
     z-index: 2;
   }
   .back-link a { color: #64b5f6; font-size: 12px; text-decoration: none; }

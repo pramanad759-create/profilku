@@ -9,35 +9,37 @@
   body { background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; color: #fff; }
   .phone-screen { width: 100%; max-width: 400px; min-height: 100vh; background: linear-gradient(180deg, #1f2c4e 0%, #0d1224 40%, #080b14 100%); padding: 40px 20px; position: relative; }
   
-  /* HEADER */
-  .header { display: flex; align-items: center; gap: 15px; margin-bottom: 30px; position: relative; padding-left: 10px; }
+  /* --- HEADER PERSIS JUANA (LOGO TENGAH) --- */
+  .header { position: relative; margin-bottom: 20px; padding-top: 10px; }
   
-  /* KOTAK PUTIH LOGO */
-  .logo-box { 
-    width: 75px; height: 75px; background: #fff; border-radius: 12px; 
-    display: flex; justify-content: center; align-items: flex-end; 
-    flex-shrink: 0; 
+  .header-text { 
+    position: absolute; top: 35px; left: 50%; transform: translateX(5%); 
+    text-align: left; z-index: 1;
   }
-  
-  /* GAMBAR BURUNG (Transparan) */
-  .logo-box img { 
-    width: 110%; 
-    height: auto;
-    object-fit: contain;
-    margin-bottom: -5px; 
-  }
-  
-  .header-text h1 { font-size: 20px; font-weight: 700; letter-spacing: 1px; margin-bottom: 2px; text-transform: uppercase; }
-  .header-text a { color: #64b5f6; font-size: 12px; text-decoration: none; display: block; }
+  .header-text h1 { font-size: 16px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 2px; text-transform: uppercase; color: #fff; }
 
-  /* KARTU PROFIL */
+  .logo-box { 
+    width: 85px; height: 85px; background: #fff; border-radius: 12px; 
+    margin: 0 auto; display: flex; justify-content: center; align-items: flex-end; 
+    position: relative; z-index: 5; padding-bottom: 2px;
+  }
+  .logo-box img { 
+    width: 110%; height: auto; object-fit: contain; margin-bottom: -12px; 
+  }
+
+  .back-link {
+    text-align: center; margin-top: -8px; position: relative; z-index: 2;
+  }
+  .back-link a { color: #64b5f6; font-size: 12px; text-decoration: none; }
+
+  /* --- KARTU PROFIL --- */
   .profile-card { background: #171c2e; border-radius: 16px; border: 1px solid #3a4a6b; position: relative; margin-bottom: 16px; overflow: hidden; }
   .profile-card-top { background: linear-gradient(135deg, #2980b9, #1a5276); height: 90px; width: 100%; position: relative; border-bottom-left-radius: 50% 20px; border-bottom-right-radius: 50% 20px; }
   .profile-card::before, .profile-card::after { content: ""; position: absolute; top: 80px; width: 6px; height: 20px; background: #1f2c4e; border-radius: 10px; z-index: 10; }
   .profile-card::before { left: -3px; }
   .profile-card::after { right: -3px; }
 
-  /* FOTO PROFIL KIRI */
+  /* FOTO PROFIL DI KIRI */
   .profile-pic-container { position: absolute; top: 35px; left: 20px; width: 110px; height: 110px; border-radius: 50%; border: 4px solid #171c2e; background: #2a344a; z-index: 5; overflow: hidden; }
   .profile-pic-container img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; }
 
@@ -62,13 +64,15 @@
 
 <div class="phone-screen">
 
+  <!-- HEADER PERSIS JUANA -->
   <div class="header">
     <div class="logo-box">
-      <!-- LOGO PAKAI FILE logo.png -->
       <img src="logo.png" alt="Logo Porprov">
     </div>
     <div class="header-text">
       <h1>PORPROV KALTIM</h1>
+    </div>
+    <div class="back-link">
       <a href="#">Kembali ke halaman verifikasi</a>
     </div>
   </div>
@@ -76,8 +80,8 @@
   <div class="profile-card">
     <div class="profile-card-top"></div>
     
+    <!-- FOTO DI KIRI -->
     <div class="profile-pic-container">
-      <!-- FOTO MUKA PAKAI NAMA FILE ASLI LO -->
       <img src="IMG_20261008_184945_903.jpg" alt="Foto Dimas">
     </div>
 

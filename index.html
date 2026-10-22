@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Profil Porprov Kaltim - Dimas</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: ui-sans-serif, system-ui, -apple-system, sans-serif; }
+  body { background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; color: #fff; }
+  .phone-screen { width: 100%; max-width: 400px; min-height: 100vh; background: linear-gradient(180deg, #1f2c4e 0%, #0d1224 40%, #080b14 100%); padding: 40px 20px; position: relative; }
+  
+  .header { display: flex; align-items: center; gap: 15px; margin-bottom: 30px; position: relative; padding-left: 10px; }
+  .logo-box { width: 75px; height: 75px; background: #fff; border-radius: 12px; display: flex; justify-content: center; align-items: flex-end; flex-shrink: 0; }
+  
+  /* LOGO TRANSPARAN */
+  .logo-box img { width: 110%; height: auto; object-fit: contain; margin-bottom: -5px; }
+  
+  .header-text h1 { font-size: 20px; font-weight: 700; letter-spacing: 1px; margin-bottom: 2px; text-transform: uppercase; }
+  .header-text a { color: #64b5f6; font-size: 12px; text-decoration: none; display: block; }
+
+  .profile-card { background: #171c2e; border-radius: 16px; border: 1px solid #3a4a6b; position: relative; margin-bottom: 16px; overflow: hidden; }
+  .profile-card-top { background: linear-gradient(135deg, #2980b9, #1a5276); height: 90px; width: 100%; position: relative; border-bottom-left-radius: 50% 20px; border-bottom-right-radius: 50% 20px; }
+  .profile-card::before, .profile-card::after { content: ""; position: absolute; top: 80px; width: 6px; height: 20px; background: #1f2c4e; border-radius: 10px; z-index: 10; }
+  .profile-card::before { left: -3px; }
+  .profile-card::after { right: -3px; }
+
+  .profile-pic-container { position: absolute; top: 35px; left: 20px; width: 110px; height: 110px; border-radius: 50%; border: 4px solid #171c2e; background: #2a344a; z-index: 5; overflow: hidden; }
+  .profile-pic-container img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; }
+
+  .profile-info { padding: 65px 20px 20px; text-align: left; }
+  .profile-info h2 { font-size: 20px; font-weight: 800; text-transform: uppercase; margin-bottom: 12px; letter-spacing: 0.5px; }
+  
+  .tags { display: flex; justify-content: flex-start; gap: 6px; flex-wrap: nowrap; align-items: center; }
+  .tag { padding: 5px 10px; border-radius: 999px; font-size: 11px; font-weight: 600; white-space: nowrap; }
+  .tag-blue { background: #2980b9; color: #fff; }
+  .tag-dark { background: #23293d; color: #fff; border: 1px solid #3a4a6b; }
+  .tag-green { background: #1abc9c; color: #fff; }
+
+  .info-box { background: #121726; border-radius: 16px; padding: 20px; border: 1px solid #2a344a; margin-bottom: 16px; }
+  .info-box h3 { color: #64b5f6; font-size: 13px; font-weight: 600; letter-spacing: 1px; margin-bottom: 20px; }
+  .info-row { margin-bottom: 16px; }
+  .info-label { font-size: 11px; color: #8c9bb3; text-transform: uppercase; margin-bottom: 4px; }
+  .info-value { font-size: 15px; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<div class="phone-screen">
+
+  <div class="header">
+    <div class="logo-box">
+      <img src="logo.png" alt="Logo Porprov">
+    </div>
+    <div class="header-text">
+      <h1>PORPROV KALTIM</h1>
+      <a href="#">Kembali ke halaman verifikasi</a>
+    </div>
+  </div>
+
+  <div class="profile-card">
+    <div class="profile-card-top"></div>
+    
+    <div class="profile-pic-container">
+      <img src="muka.jpg" alt="Foto Dimas">
+    </div>
+
+    <div class="profile-info">
+      <h2>DIMAS LISKA PRAMANA</h2>
+      <div class="tags">
+        <span class="tag tag-blue">Kota Samarinda</span>
+        <span class="tag tag-dark">Judo</span>
+        <span class="tag tag-green">LOLOS VERIFIKASI</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <h3>IDENTITAS PUBLIK</h3>
+    <div class="info-row">
+      <div class="info-label">Nama Lengkap</div>
+      <div class="info-value">DIMAS LISKA PRAMANA</div>
+    </div>
+    <div class="info-row">
+      <div class="info-label">Nama Panggilan</div>
+      <div class="info-value">-</div>
+    </div>
+    <div class="info-row">
+      <div class="info-label">Jenis Kelamin</div>
+      <div class="info-value">Laki-Laki</div>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <h3>KEOLAHRAGAAN</h3>
+  </div>
+
+</div>
+
+</body>
+  </html>

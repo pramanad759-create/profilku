@@ -10,29 +10,30 @@
   .phone-screen { width: 100%; max-width: 400px; min-height: 100vh; background: linear-gradient(180deg, #1f2c4e 0%, #0d1224 40%, #080b14 100%); padding: 40px 20px; position: relative; }
   
   /* --- HEADER PERSIS JUANA (RAPI) --- */
-  .header { position: relative; margin-bottom: 30px; padding-top: 10px; display: flex; flex-direction: column; align-items: center; }
+  .header { position: relative; margin-bottom: 30px; padding-top: 10px; }
   
+  /* Logo di tengah, background putih */
+  .logo-box { 
+    width: 75px; height: 75px; background: #fff; border-radius: 12px; 
+    margin: 0 auto; display: flex; justify-content: center; align-items: flex-end; 
+    position: relative; z-index: 5; padding-bottom: 5px; 
+  }
+  
+  /* Gambar burung: Jangan terlalu besar, jangan terlalu turun */
+  .logo-box img { 
+    width: 85%; height: auto; object-fit: contain; margin-bottom: -10px; 
+  }
+
+  /* Teks PORPROV KALTIM: Di sebelah kanan logo */
   .header-text { 
     position: absolute; top: 40px; left: 55%; 
     text-align: left; z-index: 1;
   }
-  .header-text h1 { font-size: 18px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 2px; text-transform: uppercase; color: #fff; }
+  .header-text h1 { font-size: 18px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: #fff; }
 
-  /* KOTAK PUTIH LOGO */
-  .logo-box { 
-    width: 75px; height: 75px; background: #fff; border-radius: 12px; 
-    display: flex; justify-content: center; align-items: flex-end; 
-    position: relative; z-index: 5; padding-bottom: 2px;
-  }
-  
-  /* UKURAN BURUNG DIBIKIN PAS */
-  .logo-box img { 
-    width: 95%; height: auto; object-fit: contain; margin-bottom: -8px; 
-  }
-
-  /* TULISAN KEMBALI */
+  /* Teks "Kembali": Di bawah logo, pas kena kaki burung */
   .back-link {
-    margin-top: 5px; position: relative; z-index: 2;
+    text-align: center; margin-top: 5px; position: relative; z-index: 2;
   }
   .back-link a { color: #64b5f6; font-size: 12px; text-decoration: none; }
 

@@ -9,41 +9,35 @@
   body { background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; color: #fff; }
   .phone-screen { width: 100%; max-width: 400px; min-height: 100vh; background: linear-gradient(180deg, #1f2c4e 0%, #0d1224 40%, #080b14 100%); padding: 40px 20px; position: relative; }
   
-  /* --- HEADER WRAPPER (Ngunci posisi di tengah) --- */
-  .header-wrapper { 
-    display: flex; justify-content: center; 
-    margin-bottom: 25px; margin-top: 10px;
-  }
+  /* --- HEADER PRESISI --- */
+  .header { position: relative; height: 120px; margin-bottom: 20px; }
   
-  .header-box {
-    position: relative;
-    width: 280px; /* Lebar area header */
-    height: 100px;
-  }
-
-  /* Kotak Putih (Di kiri) */
+  /* Kotak Putih */
   .logo-box { 
-    width: 70px; height: 70px; background: #fff; border-radius: 12px; 
-    position: absolute; top: 0; left: 0;
+    width: 75px; height: 75px; background: #fff; border-radius: 12px; 
+    position: absolute; top: 10px; left: 22%; 
     display: flex; justify-content: center; align-items: flex-end; 
     z-index: 5; padding-bottom: 2px;
   }
   
-  /* Burung (Nginjek teks Kembali) */
+  /* Gambar Burung (Dibikin lebih gede dikit biar keluar dari kotak) */
   .logo-box img { 
-    width: 95%; height: auto; object-fit: contain; margin-bottom: -8px; 
+    width: 115%; /* Dibikin lebih gede */
+    height: auto; 
+    object-fit: contain; 
+    margin-bottom: -18px; /* Ditarik agak turun biar nginjek teks */
   }
 
-  /* Teks PORPROV KALTIM (Di kanan) */
+  /* Teks PORPROV KALTIM (Digeser agak ke kanan biar gak ketutupan) */
   .header-text { 
-    position: absolute; top: 20px; left: 85px;
+    position: absolute; top: 30px; left: 45%; 
     text-align: left; z-index: 1;
   }
   .header-text h1 { font-size: 18px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: #fff; }
 
-  /* Teks Kembali (Di bawah, agak ke kiri biar diinjek burung) */
+  /* Teks Kembali (Digeser ke kiri biar pas diinjek kaki burung) */
   .back-link {
-    position: absolute; top: 75px; left: 15px;
+    position: absolute; top: 90px; left: 23%; 
     z-index: 2;
   }
   .back-link a { color: #64b5f6; font-size: 12px; text-decoration: none; }
@@ -80,18 +74,15 @@
 
 <div class="phone-screen">
 
-  <!-- HEADER WRAPPER BARU -->
-  <div class="header-wrapper">
-    <div class="header-box">
-      <div class="logo-box">
-        <img src="logo.png" alt="Logo Porprov">
-      </div>
-      <div class="header-text">
-        <h1>PORPROV KALTIM</h1>
-      </div>
-      <div class="back-link">
-        <a href="#">Kembali ke halaman verifikasi</a>
-      </div>
+  <div class="header">
+    <div class="logo-box">
+      <img src="logo.png" alt="Logo Porprov">
+    </div>
+    <div class="header-text">
+      <h1>PORPROV KALTIM</h1>
+    </div>
+    <div class="back-link">
+      <a href="#">Kembali ke halaman verifikasi</a>
     </div>
   </div>
 

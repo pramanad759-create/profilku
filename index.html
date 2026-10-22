@@ -9,26 +9,30 @@
   body { background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; color: #fff; }
   .phone-screen { width: 100%; max-width: 400px; min-height: 100vh; background: linear-gradient(180deg, #1f2c4e 0%, #0d1224 40%, #080b14 100%); padding: 40px 20px; position: relative; }
   
-  /* --- HEADER PERSIS JUANA (LOGO TENGAH) --- */
-  .header { position: relative; margin-bottom: 20px; padding-top: 10px; }
+  /* --- HEADER PERSIS JUANA (RAPI) --- */
+  .header { position: relative; margin-bottom: 30px; padding-top: 10px; display: flex; flex-direction: column; align-items: center; }
   
   .header-text { 
-    position: absolute; top: 35px; left: 50%; transform: translateX(5%); 
+    position: absolute; top: 40px; left: 55%; 
     text-align: left; z-index: 1;
   }
-  .header-text h1 { font-size: 16px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 2px; text-transform: uppercase; color: #fff; }
+  .header-text h1 { font-size: 18px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 2px; text-transform: uppercase; color: #fff; }
 
+  /* KOTAK PUTIH LOGO */
   .logo-box { 
-    width: 85px; height: 85px; background: #fff; border-radius: 12px; 
-    margin: 0 auto; display: flex; justify-content: center; align-items: flex-end; 
+    width: 75px; height: 75px; background: #fff; border-radius: 12px; 
+    display: flex; justify-content: center; align-items: flex-end; 
     position: relative; z-index: 5; padding-bottom: 2px;
   }
+  
+  /* UKURAN BURUNG DIBIKIN PAS */
   .logo-box img { 
-    width: 110%; height: auto; object-fit: contain; margin-bottom: -12px; 
+    width: 95%; height: auto; object-fit: contain; margin-bottom: -8px; 
   }
 
+  /* TULISAN KEMBALI */
   .back-link {
-    text-align: center; margin-top: -8px; position: relative; z-index: 2;
+    margin-top: 5px; position: relative; z-index: 2;
   }
   .back-link a { color: #64b5f6; font-size: 12px; text-decoration: none; }
 
@@ -64,7 +68,6 @@
 
 <div class="phone-screen">
 
-  <!-- HEADER PERSIS JUANA -->
   <div class="header">
     <div class="logo-box">
       <img src="logo.png" alt="Logo Porprov">
@@ -80,7 +83,6 @@
   <div class="profile-card">
     <div class="profile-card-top"></div>
     
-    <!-- FOTO DI KIRI -->
     <div class="profile-pic-container">
       <img src="IMG_20261008_184945_903.jpg" alt="Foto Dimas">
     </div>

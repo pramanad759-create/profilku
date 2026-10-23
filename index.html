@@ -12,33 +12,33 @@
   /* --- HEADER PRESISI --- */
   .header { position: relative; height: 120px; margin-bottom: 20px; }
   
-  /* KOTAK PUTIH */
+  /* KOTAK PUTIH (Digeser ke kiri) */
   .logo-box { 
     width: 65px; height: 65px; background: #fff; border-radius: 10px; 
-    position: absolute; top: 10px; left: 20%; 
+    position: absolute; top: 10px; left: 18%; /* <--- INI DIGESER KE KIRI */
     display: flex; justify-content: center; align-items: flex-end; 
     z-index: 5; padding-bottom: 2px;
   }
   
-  /* GAMBAR BURUNG (Pas di tengah) */
+  /* GAMBAR BURUNG */
   .logo-box img { 
     width: 85%; 
     height: auto; 
     object-fit: contain; 
     margin-bottom: -20px; 
-    margin-left: -3px; /* Disesuaikan biar kaki kanan pas nginjek */
+    margin-left: 0px; /* Dikembalikan ke tengah kotak */
   }
 
   /* TEKS PORPROV */
   .header-text { 
-    position: absolute; top: 30px; left: 45%; 
+    position: absolute; top: 30px; left: 42%; /* Disesuaikan spasinya */
     text-align: left; z-index: 1;
   }
   .header-text h1 { font-size: 16px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: #fff; }
 
   /* TEKS KEMBALI */
   .back-link {
-    position: absolute; top: 82px; left: 21%; 
+    position: absolute; top: 82px; left: 19%; /* Disesuaikan sama kotak yang geser */
     z-index: 2;
   }
   .back-link a { color: #64b5f6; font-size: 12px; text-decoration: none; }

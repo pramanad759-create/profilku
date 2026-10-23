@@ -26,7 +26,7 @@
   .back-link { position: absolute; top: 80px; left: 19%; z-index: 2; }
   .back-link a { color: #64b5f6; font-size: 12px; text-decoration: none; }
 
-  /* --- KARTU PROFIL (BINGKAI NYALA + KUNCIRAN PUTIH) --- */
+  /* --- KARTU PROFIL (BERSIH TANPA KUNCIRAN) --- */
   .profile-card { 
     background: #171c2e; 
     border-radius: 16px; 
@@ -34,19 +34,10 @@
     box-shadow: 0 0 12px rgba(255, 255, 255, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.05);
     position: relative; 
     margin-bottom: 16px; 
+    overflow: hidden; /* Biar rapi */
   }
   
-  .profile-card-top { background: linear-gradient(135deg, #2980b9, #1a5276); height: 90px; width: 100%; position: relative; border-bottom-left-radius: 50% 20px; border-bottom-right-radius: 50% 20px; border-top-left-radius: 14px; border-top-right-radius: 14px; }
-  
-  /* KUNCIRAN PUTIH TIPIS */
-  .profile-card::before, .profile-card::after { 
-    content: ""; position: absolute; top: 20px; width: 3px; height: 14px; 
-    background: transparent; 
-    border: 1.5px solid rgba(255, 255, 255, 0.7); /* Warnanya putih */
-    border-radius: 10px; z-index: 10; 
-  }
-  .profile-card::before { left: -4px; }
-  .profile-card::after { right: -4px; }
+  .profile-card-top { background: linear-gradient(135deg, #2980b9, #1a5276); height: 90px; width: 100%; position: relative; border-bottom-left-radius: 50% 20px; border-bottom-right-radius: 50% 20px; }
 
   /* FOTO PROFIL */
   .profile-pic-container { position: absolute; top: 35px; left: 20px; width: 110px; height: 110px; border-radius: 50%; border: 4px solid #171c2e; background: #2a344a; z-index: 5; overflow: hidden; }

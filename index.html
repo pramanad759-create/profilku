@@ -10,33 +10,35 @@
   .phone-screen { width: 100%; max-width: 400px; min-height: 100vh; background: linear-gradient(180deg, #1f2c4e 0%, #0d1224 40%, #080b14 100%); padding: 40px 20px; position: relative; }
   
   /* --- HEADER PRESISI --- */
-  .header { position: relative; height: 120px; margin-bottom: 20px; }
+  .header { position: relative; height: 100px; margin-bottom: 30px; }
   
+  /* KOTAK PUTIH (Ukurannya 65px biar mirip Juana) */
   .logo-box { 
-    width: 75px; height: 75px; background: #fff; border-radius: 12px; 
-    position: absolute; top: 10px; left: 18%; 
+    width: 65px; height: 65px; background: #fff; border-radius: 10px; 
+    position: absolute; top: 10px; left: 20%; 
     display: flex; justify-content: center; align-items: flex-end; 
     z-index: 5; padding-bottom: 2px;
   }
   
-  /* GAMBAR BURUNG (Ditarik lebih turun biar nginjek teks) */
+  /* GAMBAR BURUNG (Dikecilin maksimal biar sepatu pas di "Kem") */
   .logo-box img { 
-    width: 90%; 
+    width: 85%; /* Ukuran paling pas */
     height: auto; 
     object-fit: contain; 
-    margin-bottom: -18px; /* Ditarik lebih turun */
-    margin-left: -5px; 
+    margin-bottom: -8px; /* Cuma ujung sepatu yang turun */
+    margin-left: -2px;
   }
 
+  /* TEKS PORPROV KALTIM */
   .header-text { 
-    position: absolute; top: 30px; left: 42%; 
+    position: absolute; top: 30px; left: 40%; 
     text-align: left; z-index: 1;
   }
-  .header-text h1 { font-size: 18px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: #fff; }
+  .header-text h1 { font-size: 16px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: #fff; }
 
-  /* TEKS KEMBALI */
+  /* TEKS KEMBALI (Disesuaikan sama kotak yang lebih kecil) */
   .back-link {
-    position: absolute; top: 93px; left: 21%; 
+    position: absolute; top: 80px; left: 21%; 
     z-index: 2;
   }
   .back-link a { color: #64b5f6; font-size: 12px; text-decoration: none; }

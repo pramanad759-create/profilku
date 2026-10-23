@@ -12,31 +12,29 @@
   /* --- HEADER PRESISI --- */
   .header { position: relative; height: 120px; margin-bottom: 20px; }
   
-  /* Kotak Putih (Digeser agak ke kiri) */
   .logo-box { 
     width: 75px; height: 75px; background: #fff; border-radius: 12px; 
-    position: absolute; top: 10px; left: 18%; /* Digeser ke kiri */
+    position: absolute; top: 10px; left: 18%; 
     display: flex; justify-content: center; align-items: flex-end; 
     z-index: 5; padding-bottom: 2px;
   }
   
-  /* Gambar Burung (Dikecilin, sepatu kanan ditarik ke kiri) */
+  /* GAMBAR BURUNG (Ditarik lebih turun biar nginjek teks) */
   .logo-box img { 
-    width: 90%; /* Dikecilin biar sepatu kanan gak melar ke kanan */
+    width: 90%; 
     height: auto; 
     object-fit: contain; 
-    margin-bottom: -10px; 
-    margin-left: -5px; /* Ditarik ke kiri biar cuma nginjek "Kem" */
+    margin-bottom: -18px; /* Ditarik lebih turun */
+    margin-left: -5px; 
   }
 
-  /* Teks PORPROV KALTIM (Digeser ke kanan biar gak ketutupan) */
   .header-text { 
     position: absolute; top: 30px; left: 42%; 
     text-align: left; z-index: 1;
   }
   .header-text h1 { font-size: 18px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: #fff; }
 
-  /* Teks Kembali (Posisi teks digeser biar pas diinjek ujung sepatu) */
+  /* TEKS KEMBALI */
   .back-link {
     position: absolute; top: 93px; left: 21%; 
     z-index: 2;

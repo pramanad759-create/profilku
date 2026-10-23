@@ -9,45 +9,42 @@
   body { background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; color: #fff; }
   .phone-screen { width: 100%; max-width: 400px; min-height: 100vh; background: linear-gradient(180deg, #1f2c4e 0%, #0d1224 40%, #080b14 100%); padding: 40px 20px; position: relative; }
   
-  /* --- HEADER PRESISI --- */
-  .header { position: relative; height: 110px; margin-bottom: 20px; }
+  /* --- HEADER PERSIS JUANA --- */
+  .header { position: relative; height: 110px; margin-bottom: 20px; text-align: center; }
   
-  /* KOTAK PUTIH LOGO */
+  /* KOTAK PUTIH (Di tengah) */
   .logo-box { 
-    width: 60px; height: 60px; background: #fff; border-radius: 10px; 
-    position: absolute; top: 10px; left: 20%; 
+    width: 60px; height: 60px; background: #fff; border-radius: 12px; 
+    margin: 0 auto; /* Biar di tengah */
     display: flex; justify-content: center; align-items: flex-end; 
-    z-index: 5; padding-bottom: 2px;
+    position: relative; z-index: 5; padding-bottom: 2px;
   }
   
-  /* GAMBAR BURUNG */
+  /* GAMBAR BURUNG (Kecil dan sepatu nginjek) */
   .logo-box img { 
-    width: 90%; 
+    width: 95%; 
     height: auto; 
     object-fit: contain; 
-    margin-bottom: -18px; 
-    margin-left: 2px; 
+    margin-bottom: -10px; /* Cuma ujung sepatu yang turun */
   }
 
-  /* TEKS PORPROV */
+  /* TEKS PORPROV (Di kanan logo) */
   .header-text { 
-    position: absolute; top: 25px; left: 42%; 
+    position: absolute; top: 25px; left: 55%; 
     text-align: left; z-index: 1;
   }
   .header-text h1 { font-size: 16px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: #fff; }
 
-  /* TEKS KEMBALI */
+  /* TEKS KEMBALI (Di bawah logo) */
   .back-link {
-    position: absolute; top: 75px; left: 18%; 
-    z-index: 2;
+    margin-top: 5px; position: relative; z-index: 2;
   }
   .back-link a { color: #64b5f6; font-size: 12px; text-decoration: none; }
 
-  /* --- KARTU PROFIL (Dikasih Bingkai Nyala) --- */
+  /* --- KARTU PROFIL (BINGKAI NYALA) --- */
   .profile-card { 
     background: #171c2e; 
     border-radius: 16px; 
-    /* EFEK BINGKAI NYALA PUTIH DI SINI */
     border: 1.5px solid rgba(255, 255, 255, 0.7); 
     box-shadow: 0 0 12px rgba(255, 255, 255, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.05);
     position: relative; 

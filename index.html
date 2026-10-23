@@ -10,35 +10,35 @@
   .phone-screen { width: 100%; max-width: 400px; min-height: 100vh; background: linear-gradient(180deg, #1f2c4e 0%, #0d1224 40%, #080b14 100%); padding: 40px 20px; position: relative; }
   
   /* --- HEADER PRESISI --- */
-  .header { position: relative; height: 120px; margin-bottom: 20px; }
+  .header { position: relative; height: 110px; margin-bottom: 20px; }
   
-  /* KOTAK PUTIH (Digeser ke kiri) */
+  /* KOTAK PUTIH (Dikecilin dikit) */
   .logo-box { 
-    width: 65px; height: 65px; background: #fff; border-radius: 10px; 
-    position: absolute; top: 10px; left: 18%; /* <--- INI DIGESER KE KIRI */
+    width: 60px; height: 60px; background: #fff; border-radius: 10px; 
+    position: absolute; top: 10px; left: 20%; 
     display: flex; justify-content: center; align-items: flex-end; 
     z-index: 5; padding-bottom: 2px;
   }
   
   /* GAMBAR BURUNG */
   .logo-box img { 
-    width: 85%; 
+    width: 90%; 
     height: auto; 
     object-fit: contain; 
-    margin-bottom: -20px; 
-    margin-left: 0px; /* Dikembalikan ke tengah kotak */
+    margin-bottom: -18px; 
+    margin-left: 2px; 
   }
 
-  /* TEKS PORPROV */
+  /* TEKS PORPROV (Ditarik agak ke kiri) */
   .header-text { 
-    position: absolute; top: 30px; left: 42%; /* Disesuaikan spasinya */
+    position: absolute; top: 25px; left: 42%; 
     text-align: left; z-index: 1;
   }
   .header-text h1 { font-size: 16px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: #fff; }
 
   /* TEKS KEMBALI */
   .back-link {
-    position: absolute; top: 82px; left: 19%; /* Disesuaikan sama kotak yang geser */
+    position: absolute; top: 75px; left: 18%; 
     z-index: 2;
   }
   .back-link a { color: #64b5f6; font-size: 12px; text-decoration: none; }

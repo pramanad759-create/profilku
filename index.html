@@ -9,10 +9,10 @@
   body { background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; color: #fff; }
   .phone-screen { width: 100%; max-width: 400px; min-height: 100vh; background: linear-gradient(180deg, #1f2c4e 0%, #0d1224 40%, #080b14 100%); padding: 40px 20px; position: relative; }
   
-  /* --- HEADER PERSIS JUANA --- */
+  /* --- HEADER PRESISI --- */
   .header { position: relative; height: 110px; margin-bottom: 20px; }
   
-  /* KOTAK PUTIH (Di Kiri) */
+  /* KOTAK PUTIH */
   .logo-box { 
     width: 65px; height: 65px; background: #fff; border-radius: 10px; 
     position: absolute; top: 10px; left: 20%; 
@@ -20,12 +20,12 @@
     z-index: 5; padding-bottom: 2px;
   }
   
-  /* GAMBAR BURUNG (Ditarik Lebih Turun) */
+  /* GAMBAR BURUNG */
   .logo-box img { 
     width: 85%; 
     height: auto; 
     object-fit: contain; 
-    margin-bottom: -25px; /* Ditarik makin turun biar nginjek teks */
+    margin-bottom: -22px; 
     margin-left: 0px;
   }
 
@@ -43,7 +43,7 @@
   }
   .back-link a { color: #64b5f6; font-size: 12px; text-decoration: none; }
 
-  /* --- KARTU PROFIL (BINGKAI NYALA) --- */
+  /* --- KARTU PROFIL (BINGKAI NYALA + KUNCIRAN) --- */
   .profile-card { 
     background: #171c2e; 
     border-radius: 16px; 
@@ -51,13 +51,19 @@
     box-shadow: 0 0 12px rgba(255, 255, 255, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.05);
     position: relative; 
     margin-bottom: 16px; 
-    overflow: hidden; 
+    /* overflow: hidden; DIHAPUS BIAR KUNCIRAN KELUAR */
   }
   
   .profile-card-top { background: linear-gradient(135deg, #2980b9, #1a5276); height: 90px; width: 100%; position: relative; border-bottom-left-radius: 50% 20px; border-bottom-right-radius: 50% 20px; }
-  .profile-card::before, .profile-card::after { content: ""; position: absolute; top: 80px; width: 6px; height: 20px; background: #1f2c4e; border-radius: 10px; z-index: 10; }
-  .profile-card::before { left: -3px; }
-  .profile-card::after { right: -3px; }
+  
+  /* KUNCIRAN KIRI & KANAN */
+  .profile-card::before, .profile-card::after { 
+    content: ""; position: absolute; top: 25px; width: 6px; height: 25px; 
+    background: #171c2e; border: 1.5px solid rgba(255, 255, 255, 0.7); 
+    border-radius: 10px; z-index: 10; 
+  }
+  .profile-card::before { left: -5px; }
+  .profile-card::after { right: -5px; }
 
   /* FOTO PROFIL DI KIRI */
   .profile-pic-container { position: absolute; top: 35px; left: 20px; width: 110px; height: 110px; border-radius: 50%; border: 4px solid #171c2e; background: #2a344a; z-index: 5; overflow: hidden; }

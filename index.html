@@ -9,35 +9,35 @@
   body { background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; color: #fff; }
   .phone-screen { width: 100%; max-width: 400px; min-height: 100vh; background: linear-gradient(180deg, #1f2c4e 0%, #0d1224 40%, #080b14 100%); padding: 40px 20px; position: relative; }
   
-  /* --- HEADER PERSIS JUANA --- */
-  .header { position: relative; height: 110px; margin-bottom: 20px; text-align: center; }
+  /* --- HEADER PERSIS JUANA (RAPI) --- */
+  .header { position: relative; height: 110px; margin-bottom: 20px; }
   
   /* KOTAK PUTIH (Di tengah) */
   .logo-box { 
-    width: 60px; height: 60px; background: #fff; border-radius: 12px; 
+    width: 60px; height: 60px; background: #fff; border-radius: 10px; 
     margin: 0 auto; /* Biar di tengah */
     display: flex; justify-content: center; align-items: flex-end; 
     position: relative; z-index: 5; padding-bottom: 2px;
   }
   
-  /* GAMBAR BURUNG (Kecil dan sepatu nginjek) */
+  /* GAMBAR BURUNG (Dikecilin biar rapi) */
   .logo-box img { 
-    width: 95%; 
+    width: 85%; /* Dikecilin biar proporsional */
     height: auto; 
     object-fit: contain; 
-    margin-bottom: -10px; /* Cuma ujung sepatu yang turun */
+    margin-bottom: -8px; /* Turun dikit biar nginjek teks */
   }
 
-  /* TEKS PORPROV (Di kanan logo) */
+  /* TEKS PORPROV (Digeser ke kanan biar nggak ketutupan) */
   .header-text { 
-    position: absolute; top: 25px; left: 55%; 
+    position: absolute; top: 25px; left: 53%; 
     text-align: left; z-index: 1;
   }
   .header-text h1 { font-size: 16px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: #fff; }
 
-  /* TEKS KEMBALI (Di bawah logo) */
+  /* TEKS KEMBALI (Di bawah, pas di tengah) */
   .back-link {
-    margin-top: 5px; position: relative; z-index: 2;
+    text-align: center; margin-top: 5px; position: relative; z-index: 2;
   }
   .back-link a { color: #64b5f6; font-size: 12px; text-decoration: none; }
 

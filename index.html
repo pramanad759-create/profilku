@@ -15,29 +15,30 @@
   /* Kotak Putih (Digeser agak ke kiri) */
   .logo-box { 
     width: 75px; height: 75px; background: #fff; border-radius: 12px; 
-    position: absolute; top: 10px; left: 20%; 
+    position: absolute; top: 10px; left: 18%; /* Digeser ke kiri */
     display: flex; justify-content: center; align-items: flex-end; 
     z-index: 5; padding-bottom: 2px;
   }
   
-  /* Gambar Burung (Dikecilin, ditarik pas ke bawah) */
+  /* Gambar Burung (Dikecilin, sepatu kanan ditarik ke kiri) */
   .logo-box img { 
-    width: 100%; /* Ukuran normal */
+    width: 90%; /* Dikecilin biar sepatu kanan gak melar ke kanan */
     height: auto; 
     object-fit: contain; 
-    margin-bottom: -12px; /* Cuma ujung sepatu yang turun */
+    margin-bottom: -10px; 
+    margin-left: -5px; /* Ditarik ke kiri biar cuma nginjek "Kem" */
   }
 
   /* Teks PORPROV KALTIM (Digeser ke kanan biar gak ketutupan) */
   .header-text { 
-    position: absolute; top: 30px; left: 45%; 
+    position: absolute; top: 30px; left: 42%; 
     text-align: left; z-index: 1;
   }
   .header-text h1 { font-size: 18px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: #fff; }
 
-  /* Teks Kembali (Digeser biar sepatu nginjek huruf "Kem") */
+  /* Teks Kembali (Posisi teks digeser biar pas diinjek ujung sepatu) */
   .back-link {
-    position: absolute; top: 93px; left: 20%; 
+    position: absolute; top: 93px; left: 21%; 
     z-index: 2;
   }
   .back-link a { color: #64b5f6; font-size: 12px; text-decoration: none; }
